@@ -9,7 +9,6 @@ const Users = () => {
   const [error, setError] = useState(false);
   const fetchData = async () => {
 
-
     try {
       const res = await axios.get('https://jsonplaceholder.typicode.com/users')
       setError(false);
