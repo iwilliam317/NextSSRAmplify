@@ -15,6 +15,7 @@ const Users = () => {
       setUsers(prevState => [...prevState, ...res.data]);
     } catch (error) {
       setError(true);
+      
     }
     finally {
       setLoading(false);
