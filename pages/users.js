@@ -1,7 +1,7 @@
 // users/page.jsx
 // data fetched from an external data source with axiosimport { useEffect, useState } from 'react';
 import axios from 'axios';
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -9,17 +9,18 @@ const Users = () => {
   const [error, setError] = useState(false);
   const fetchData = async () => {
 
+
     try {
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users')
-        setError(false);
-        setUsers(prevState => [...prevState, ...res.data]);
+      const res = await axios.get('https://jsonplaceholder.typicode.com/users')
+      setError(false);
+      setUsers(prevState => [...prevState, ...res.data]);
     } catch (error) {
-        setError(true);
+      setError(true);
     }
     finally {
-        setLoading(false);
+      setLoading(false);
     }
-      
+
   };
 
   useEffect(() => {
