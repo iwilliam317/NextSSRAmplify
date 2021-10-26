@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useState, useEffect } from 'react'
 
 const Users = () => {
-  
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
