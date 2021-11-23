@@ -13,6 +13,7 @@ frontend:
     build:
       commands:
         - npm run next_version
+        - npm run npm_version
         - npm run build
   artifacts:
     baseDirectory: .next

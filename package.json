@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "next_version": "next -version"
+    "next_version": "next -version",
+    "npm_version": "npm -v"
   },
   "dependencies": {
     "axios": "^0.21.1",
