@@ -9,9 +9,9 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
     build:
       commands:
+        - npm ci
         - npm run next_version
         - npm run npm_version
         - npm run build
