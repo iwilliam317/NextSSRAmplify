@@ -43,6 +43,7 @@ const Users = ({ users, error }) => {
     </section>
   );
   
+  
 };
 
 export const getServerSideProps = async () => {
