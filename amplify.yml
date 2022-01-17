@@ -4,14 +4,13 @@ backend:
     build:
       commands:
         - '# Execute Amplify CLI with the helper script'
-        - amplifyPush --simple 
+        
         
 frontend:
   phases:
     preBuild:
       commands:
-        - pip3 install awscli --upgrade --user
-        - export DK_CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain datakwip --domain-owner 032363835097 --query authorizationToken --output text`
+       
         - npm ci
     build:
       commands:
