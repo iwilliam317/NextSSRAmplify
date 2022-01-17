@@ -16,6 +16,8 @@ frontend:
     build:
       commands:
         - npm run next_version
+        - nvm use $VERSION_NODE_16=16
+        - node -v
         - npm run build
   artifacts:
     baseDirectory: .next
