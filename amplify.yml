@@ -12,7 +12,7 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_16
         - node -v
-        - jq --version
+        - yum install jq -y
         - npm ci
     build:
       commands:
