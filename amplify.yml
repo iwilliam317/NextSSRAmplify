@@ -12,7 +12,6 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_16
         - node -v
-        - sudo apt install jq -y 
         - npm ci
     build:
       commands:
