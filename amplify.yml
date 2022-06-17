@@ -13,6 +13,11 @@ frontend:
         - nvm use $VERSION_NODE_16
         - node -v
         - npm ci
+        - echo $TEST
+        - export TEST=$TEST
+
+        - echo $USER_BRANCH
+        - export USER_BRANCH=$USER_BRANCH
     build:
       commands:
         - npm run next_version
