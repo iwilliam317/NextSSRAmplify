@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Amplify, Auth } from 'aws-amplify';
-import awsconfig from '../src/aws-exports';
-Amplify.configure(awsconfig);
+import { Amplify } from "aws-amplify";
+import awsExports from "../src/aws-exports";
+Amplify.configure({ ...awsExports, ssr: true });
 
 export default function Home() {
   return (
