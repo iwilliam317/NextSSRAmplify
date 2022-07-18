@@ -21,6 +21,7 @@ frontend:
 
         - echo 'CHECKING MEMORY...'
         - node -e 'console.log(v8.getHeapStatistics().total_available_size)'
+        - npm run build
     build:
       commands:
         - npm run next_version
