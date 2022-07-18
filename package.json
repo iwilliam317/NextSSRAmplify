@@ -10,6 +10,7 @@
     "npm_version": "npm -v"
   },
   "dependencies": {
+    "aws-amplify": "^4.3.27",
     "axios": "^0.21.1",
     "next": "12.1.6",
     "react": "17.0.2",
